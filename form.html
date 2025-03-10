@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <center>
+    <head>
+        <title>Course Registration Form</title>
+        <style>
+            html {
+                background-image: url("G:/classroom/webdev/images/bg.png");
+                background-size: cover;
+                font-family: Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <main >
+        <h1>Course Registration Form</h1>
+        <h4>Created By Keerthi Vasan </h4>
+        <form text-align="center" >
+            <div>
+                <table>
+                    <tr>
+                    <th>Name</th>
+                    <td><input type="text" placeholder="Enter the name" size="20"></td>
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td>
+                            <select id="Gender" name="Gender" >
+                                <option value="None">None</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>USN</th>
+                        <td>
+                            <input type="text" placeholder="Enter USN" size="10" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>DOB</th>
+                        <td>
+                            <input type="date" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>AGE</th>
+                        <td>
+                            <input type="text" name="AGE" placeholder="0" size="2"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Select Course</th>
+                        <td>
+                            <select id="Course" name="Course" >
+                                <option value="None">None</option>
+                                <option value="WEB Programming">WEB Programming</option>
+                                <option value="Software Development">Software Development</option>
+                                <option value="Graphic Designer">Graphic Designer</option>
+                                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                                <option value="Data Science">Data Science</option>
+                            </select><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Phone Number</th>
+                        <td>
+                            <input type="text" placeholder="Enter the phone number" size="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>
+                            <input type="email" placeholder="Enter the email" size="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>
+                            <textarea name="Address" rows="4" cols="30" placeholder="Enter the address"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="submit">
+                            <input type="submit" value="Submit" onclick="alert('Registration Form Submitted ');">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </form>
+    </main>
+    </center>
+</html>
