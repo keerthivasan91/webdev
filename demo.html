@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Page</title>
+    <style>
+        body{
+            text-align:center;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            display:inline-block; 
+        }
+        #container{
+            width: 800px;
+            height: 200px;
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        #a1{
+            background-color: aquamarine;
+        }
+        #a2{
+            background-color:beige;
+        }
+        #a3{
+            background-color:blue;
+        }
+        #a4{
+            background-color:darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <h3>Flex Container</h3>
+    <div id="container">
+        <div id="a1">box1</div>
+        <div id="a2">box2</div>
+        <div id="a3">box3</div>
+        <div id="a4">box4</div>
+    </div>
+</body>
+</html>

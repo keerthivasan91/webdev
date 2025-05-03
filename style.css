@@ -1,0 +1,71 @@
+body {
+    background-image: url('G:/classroom/webdev/images/white.jpg');
+    background-size:cover;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor:wait;
+}
+
+.header {
+    background-color:rgb(138, 173, 239);
+    color: rgb(18, 18, 18);
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.text {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline;
+    color: darkblue;
+    text-align: center;
+}
+
+.link:link {
+    color: blue;
+    text-decoration: none;
+}
+.link:visited {
+    color:black;
+}
+.link:hover {
+    color:chartreuse;
+    text-decoration: underline;
+    padding:10;
+}
+.link:active {
+    color: green;
+}
+
+.layer1, .layer2 {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+
+.layer1 {
+    background-color: rgba(255, 0, 0, 0.7);
+    left: 50px;
+    top: 200px;
+    z-index: 1;
+}
+
+.layer2 {
+    background-color: rgba(0, 0, 255, 0.7);
+    left: 100px;
+    top: 250px;
+    z-index: 2;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+
+}

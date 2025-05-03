@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+    }
+    table {
+      margin: 20px 0;
+    }
+    input[type="number"] {
+      width: 100px;
+      padding: 10px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 10px 15px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+    h3 {
+      color: #333;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    td {
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h2>Simple Calculator</h2>
+  <div>
+    <table>
+      <tr>
+        <td><input type="number" id="num1" placeholder="Enter first number"></td>
+        <td><input type="number" id="num2" placeholder="Enter second number"></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button onclick="calculate('+')">+</button>
+          <button onclick="calculate('-')">-</button>
+          <button onclick="calculate('*')">*</button>
+          <button onclick="calculate('/')">/</button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h3 id="result">Result: </h3>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    function calculate(operator) {
+      const num1 = parseFloat(document.getElementById('num1').value);
+      const num2 = parseFloat(document.getElementById('num2').value);
+      let result;
+
+      switch (operator) {
+        case '+':
+          result = num1 + num2;
+          break;
+        case '-':
+          result = num1 - num2;
+          break;
+        case '*':
+          result = num1 * num2;
+          break;
+        case '/':
+          if (num2 !== 0) {
+            result = num1 / num2;
+          } else {
+            result = 'Error: Division by zero';
+          }
+          break;
+        default:
+          result = 'Invalid operator';
+      }
+
+      document.getElementById('result').innerText = 'Result: ' + result;
+    }
+  </script>
+</body>
+</html>
