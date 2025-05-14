@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Grow and Shrink</title>
+  <style>
+    #text {
+      font-size: 5pt;
+      color: red;
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body id="body"> 
+
+  <h1 id="text">TEXT-GROWING</h1>
+
+  <script>
+    let text = document.getElementById("text");
+    let size = 5;
+    let growing = true;
+    let b = document.getElementById("body");
+
+    setInterval(function () {
+      text.style.fontSize = size + "pt";
+
+      if (growing) {
+        text.textContent = "TEXT-GROWING";
+        text.style.color = "red";
+        size++;
+        b.style.backgroundColor = "black";
+
+        if (size >= 50) {
+          growing = false;
+        }
+      } else {
+        text.textContent = "TEXT-SHRINKING";
+        text.style.color = "blue";
+        size--;
+        b.style.backgroundColor = "white";
+
+        if (size <= 5) {
+          growing = true;
+        }
+      }
+    }, 100);
+  </script>
+
+</body>
+</html>
