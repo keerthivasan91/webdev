@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <div>
+        <p id="fact"></p>
+    </div>
+    <script>
+        let a = parseInt(prompt("enter a no."));
+        let b = document.getElementById("fact");
+        let res = 1;
+        for(let i =1;i<=a;i++){
+            res = res *i;
+        }
+        b.innerText = "fact = " + res;
+    </script>
+    <?php
+        $n = 1;
+        $sum = 0;
+        while($n<101){
+            $sum += $n;
+            $n++; 
+        }
+        echo "sum = " . $sum;
+    ?>
+</body>
+</html>
