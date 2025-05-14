@@ -8,6 +8,8 @@
 <body>
     <div>
         <p id="fact"></p>
+        <p id="a1">hello how are you</p>
+        <button >color change</button>
     </div>
     <script>
         let a = parseInt(prompt("enter a no."));
@@ -17,6 +19,11 @@
             res = res *i;
         }
         b.innerText = "fact = " + res;
+        let c = document.getElementById("a1");
+        let btn = document.querySelector("button");
+        btn.addEventListener("click", function() {
+            c.style.color = "red";
+        });
     </script>
 </body>
 </html>
