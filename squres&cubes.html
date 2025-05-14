@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Squares and Cubes</title>
+  <style>
+    table {
+      width: 300px;
+      border-collapse: collapse;
+      margin: 20px 38%;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px;
+      text-align: center;
+        ;
+    }
+    th {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center">
+  <h2>Squares and Cubes from 0 to 10</h2>
+  <table id="resultTable">
+    <tr>
+      <th>Number</th>
+      <th>Square</th>
+      <th>Cube</th>
+    </tr>
+  </table>
+  </div>
+  <script>
+    const table = document.getElementById("resultTable");
+
+    for (let i = 0; i <= 10; i++) {
+      const row = table.insertRow(); // Add a new row
+      row.insertCell(0).textContent = i;
+      row.insertCell(1).textContent = i * i;
+      row.insertCell(2).textContent = i * i * i;
+    }
+  </script>
+
+</body>
+</html>
